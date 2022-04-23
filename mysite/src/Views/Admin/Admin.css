@@ -5,6 +5,30 @@
     background-image: linear-gradient(to bottom right, rgb(9, 127, 237), rgb(78, 208, 237));
 }
 
+/* logout */
+.logout{
+    position: absolute;
+    display: flex;
+    background-color: unset;
+    right: 5%;
+    margin-top: -7.5%;
+}
+
+.logout h3{
+    background-color: unset;
+}
+
+.logout button{
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 10px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #103ce6;
+    color: white;
+    font-size: 20px;
+}
+
 /* user */
 
 .adminUserView{

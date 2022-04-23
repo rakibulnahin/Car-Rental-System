@@ -146,6 +146,7 @@ export default function Admin(){
         
         return(
             <div className='adminCarDetails'>
+                
                 <h1 style={{color: "blue"}}>User Details</h1>
                 <ul className='adminCarDetailsList'>
                     <h3>CarID</h3>
@@ -220,7 +221,12 @@ export default function Admin(){
     return(
         <div className='container'>
             <h1 style={{backgroundColor: "#3454d1"}}>WELCOME KING {sessionUser["Name"]}</h1>
-            <h3 style={{position: "absolute", right:'5%', marginTop: "-6.5%", backgroundColor: "unset"}}>{sessionUser["Name"]}</h3>
+
+            <div className='logout'>
+                <h3 >{sessionUser["Name"]}</h3>
+                <button onClick={()=>{sessionStorage.clear(); navigate("/")}}>Logout</button>
+            </div>
+            
             {/*User */}
             <div className=' adminUserView'>
                 <img src={userImg} style={{marginLeft: "1%", borderRadius: "10px"}}/>
