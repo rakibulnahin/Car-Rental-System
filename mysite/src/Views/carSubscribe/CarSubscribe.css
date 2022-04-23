@@ -1,0 +1,144 @@
+.img{
+    height: 500px;
+    width: 60%;
+}
+
+.user{
+    position: absolute;
+    background-color: aliceblue;
+    margin-top: -60px;
+    right: 20px;
+}
+
+.bookingView{
+    display: flex;
+}
+
+.bookings{
+    height: 400px;
+    width: 50%;
+    background-color: aliceblue;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    overflow: scroll;
+
+}
+
+.h{
+    color: blue;
+    /* position: absolute; */
+    z-index: 2;
+    background-color: inherit;
+}
+
+.headers{
+    display: flex;
+    /* flex-direction: row; */
+    background-color: inherit;
+    justify-content: space-between;
+}
+.headers h3{
+    background-color: inherit;
+}
+
+.bookingList{
+    position: relative;
+    background-color: inherit;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    
+}
+
+.bookingList h3{
+    background-color: inherit;
+}
+
+.makeBooking{
+    height: 400px;
+    width: 40%;
+    background-color: aliceblue;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px 5px black;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.makeBooking {
+    /* background-color: inherit; */
+    justify-content: center;
+    color: aliceblue;
+}
+
+.makeBooking h3,h1{
+    background-color: inherit;
+}
+
+.makeBooking input{
+    border-radius: 10px;
+    width: 50%;
+    color: aliceblue;
+}
+
+.makeBooking button{
+    width: 50%;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+.commentView{
+    height: 300px;
+    width: 80%;
+    background-color: aliceblue;
+    margin: 5%;
+    margin-top: 1%;
+    border-radius: 10px;
+    overflow: scroll;
+    text-align: left;
+    justify-content: left;
+    overflow-x: hidden;
+}
+
+.commentView h3{
+    background-color: inherit;
+    text-align: left;
+    justify-content: left;
+    margin: 5%;
+    padding: 2px;
+    border-radius: 5px;
+    border: 2px solid red
+}
+
+
+.addComment input{
+    background-color: aliceblue;
+    border: yellow solid 2px;
+    border-radius: 5px;
+    margin-left: -11%;
+    margin-right: 1%;
+    height: 50px;
+    width: 70%;
+    word-wrap: break-word;
+}
+
+.addComment button{
+    height: 50px;
+    width: 7%;
+    background-image: linear-gradient(to right, rgb(242, 234, 80), rgb(113, 230, 30));
+    border-radius: 5px;
+}

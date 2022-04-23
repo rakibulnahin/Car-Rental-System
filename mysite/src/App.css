@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    background-color: aliceblue;
+}
+
+
+.navbar ul{
+    background-color: inherit;
+}
+
+.navbar ul *{
+    background-color: inherit;
+    display: inline;
+    margin-left: 5px;
+    text-decoration: none;
+}

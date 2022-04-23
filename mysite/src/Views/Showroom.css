@@ -1,0 +1,82 @@
+*{
+    background-color: rgb(47, 48, 48);
+    text-align: center;
+  }
+  
+  .searchIcon{
+    margin-right: 2%;
+    background-color: aliceblue;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+  
+  .filter{
+    width: 300px;
+    height: 27px;
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  
+  .PRO{
+    display: inline;
+  }
+  
+  .slider{
+    position: relative;
+    /* background-color: aliceblue; */
+    height: 550px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+  }
+  
+  .slider img{
+    position: absolute;
+    left: 0px;
+    height: inherit;
+    width: 55%;
+    border-radius: 5px;
+  }
+  
+  .slider .content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    height: inherit;
+    width: 45%;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content ul li{
+    position: relative;
+    text-align: start;
+    margin: 15px;
+    margin-bottom: 30px;
+    left: 30%;
+    width: 60%;
+    list-style: square;
+  }
+  
+  .content button{
+    background-color: orange;
+    border-radius: 5px;
+    height: 40px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .content button img{
+    background-color: inherit;
+  }

@@ -1,0 +1,164 @@
+.container{
+    margin-top: -2%;
+    /* height: 500vh; */
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(to bottom right, rgb(9, 127, 237), rgb(78, 208, 237));
+}
+
+/* user */
+
+.adminUserView{
+    text-align: center;
+    background-color: unset;
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin: 5%;
+    overflow: hidden;
+}
+
+.adminUserDetails{
+    background-color: rgb(0, 255, 255);
+    width: 60%;
+    height: 90%;
+    margin: 1.5%;
+    margin-left: 15%;
+    border-radius: 10px;
+    box-shadow: -8px 8px rgba(0, 255, 255, 0.4);
+    overflow-y: scroll;
+}
+
+
+
+.adminUserDetails ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.adminUserDetailsList{
+    background-color: unset;
+}
+
+.adminUserDetailsList h3{
+    background-color: unset;
+}
+
+/* bookinng */
+.adminBookingView{
+    background-color: unset;
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    /* box-shadow: -8px 8px rgba(0, 255, 255, 0.4); */
+    justify-content: center;
+    margin-left: 5%;
+    display: flex;
+}
+
+.adminBookingDetails{
+    background-color: #103ce6;
+    width: 50%;
+    height: 100%;
+    /* margin-top: 5%; */
+    margin-left: 8%;
+    border-radius: 10px;
+    box-shadow: -8px 8px rgba(16, 60, 230, 0.4);
+    overflow-y: scroll;
+
+}
+
+.adminBookingDetails ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+.adminBookingDetailsList{
+    background-color: unset;
+}
+
+.adminBookingDetailsList h3{
+    background-color: unset;
+}
+
+/* car view */
+
+.admincarView{
+    background-color: unset;
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.adminCarDetails{
+    background-color: rgb(157, 16, 204);
+    width: 60%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: -8px 8px rgba(157, 16, 204, 0.5);
+    overflow-y: scroll;
+
+}
+
+.adminCarDetails ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+.adminCarDetailsList{
+    background-color: unset;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.adminCarDetailsList h3{
+    background-color: unset;
+}
+
+/* car input */
+
+.adminCarInput{
+    height: 450px;
+    width: 30%;
+    margin-left: 5%;
+    background-color: blueviolet;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.adminCarInput input{
+    text-align: center;
+    width: 45%;
+    margin-left: 25%;
+    color: aliceblue;
+    height: 5%;
+    border-radius: 5px;
+}
+
+.adminCarInput h3{
+    text-align: center;
+    width: 45%;
+    margin-left: 25%;
+    color: aliceblue;
+    height: 5%;
+    border-radius: 5px;
+    background-color: unset;
+    margin-bottom: -5%;
+}
+
+.adminCarInput button{
+    text-align: center;
+    width: 45%;
+    margin-left: 25%;
+    color: aliceblue;
+    height: 10%;
+    border-radius: 5px;
+    background-color: rgba(99, 247, 41, 0.5);
+}
