@@ -152,6 +152,7 @@ app.get("/getUserBookings", (req, res)=>{
     })
 })
 
+
 app.post("/removeBooking", (req, res)=>{
     console.log("calling")
     const bookingID = req.body.BookingID
