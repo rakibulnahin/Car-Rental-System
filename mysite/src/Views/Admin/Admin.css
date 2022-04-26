@@ -49,6 +49,10 @@
     margin-left: 15%;
     border-radius: 10px;
     box-shadow: -8px 8px rgba(0, 255, 255, 0.4);
+    overflow-y: hidden;
+}
+
+.adminUserDetails:hover{
     overflow-y: scroll;
 }
 
@@ -87,8 +91,11 @@
     margin-left: 8%;
     border-radius: 10px;
     box-shadow: -8px 8px rgba(16, 60, 230, 0.4);
-    overflow-y: scroll;
+    overflow-y: hidden;
+}
 
+.adminBookingDetails:hover{
+    overflow-y: scroll;
 }
 
 .adminBookingDetails ul{
@@ -99,6 +106,14 @@
 
 .adminBookingDetailsList{
     background-color: unset;
+}
+
+.adminBookingDetailsList button{
+    height: 30px;
+    width: 5%;
+    margin-top: 15px;
+    border-radius: 100%;
+    background-color: red;
 }
 
 .adminBookingDetailsList h3{
@@ -124,8 +139,12 @@
     height: 90%;
     border-radius: 10px;
     box-shadow: -8px 8px rgba(157, 16, 204, 0.5);
-    overflow-y: scroll;
+    overflow-y: hidden;
 
+}
+
+.adminCarDetails:hover{
+    overflow-y: scroll;
 }
 
 .adminCarDetails ul{
@@ -174,7 +193,8 @@
     height: 5%;
     border-radius: 5px;
     background-color: unset;
-    margin-bottom: -5%;
+    /* margin-top: -7%; */
+    margin-bottom: 1%;
 }
 
 .adminCarInput button{

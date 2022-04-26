@@ -66,6 +66,13 @@ export default function Admin(){
         })
     },[])
 
+    const onRemoveBooking =(bookingiD) =>{
+        Axios.post("http://localhost:3001/removeBooking", {
+            BookingID: bookingiD
+        }).then((res)=>{
+            console.log(res)
+        })
+    }
 
     const UserView=()=>{
 
@@ -133,6 +140,7 @@ export default function Admin(){
                                 <h3>{startdatetime[1]}</h3>
                                 <h3>{enddatetime[0]}</h3>
                                 <h3>{enddatetime[1]}</h3>
+                                <button onClick={()=>{onRemoveBooking(u["BookingID"])}}></button>
                             </ul>
                         )
                     })
@@ -203,6 +211,7 @@ export default function Admin(){
 
         return(
             <div className='adminCarInput'>
+                <h1>Provide Car Details</h1>
                 <h3>Name</h3>
                 <input onChange={(e)=>{let a = carInput; a[0] = e.target.value; setCarInput(a);}}/>
                 <h3>Description</h3>

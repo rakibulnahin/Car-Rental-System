@@ -25,8 +25,12 @@
     padding-right: 60px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px black;
-    overflow: scroll;
+    overflow: hidden;
 
+}
+
+.bookings:hover{
+    overflow-y: scroll;
 }
 
 .h{
@@ -108,10 +112,13 @@
     margin: 5%;
     margin-top: 1%;
     border-radius: 10px;
-    overflow: scroll;
+    overflow: hidden;
     text-align: left;
     justify-content: left;
-    overflow-x: hidden;
+}
+
+.commentView:hover{
+    overflow-y: scroll;
 }
 
 .commentView h3{

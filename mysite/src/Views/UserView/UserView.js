@@ -96,7 +96,11 @@ export default function UserView(){
 
     return(
         <div>
-            <h3 className='name'>{sessionUser["Name"]}</h3>
+            <div className='logout' style={{marginTop: "-3.5%"}}>
+                <h3 >{sessionUser["Name"]}</h3>
+                <button onClick={()=>{sessionStorage.clear(); navigate("/")}}>Logout</button>
+            </div>
+
             <div style={{display: "flex"}}>
                 <div className='bookings'>
                     <h3 className='h'>Booking</h3>

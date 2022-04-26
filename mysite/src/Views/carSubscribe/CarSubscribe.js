@@ -138,40 +138,65 @@ function CarSubscribe(){
         if(userKeyRegExp.test(startTime) && userKeyRegExp.test(endTime)){
             
             
-            let start = startTime.replace(" ", "T"); 
-            let end = endTime.replace(" ", "T");
-            start = new Date(start)
-            end = new Date(end)
-            console.log(start)
-            console.log(end)
+            let input_start = startTime; 
+            let input_end = endTime;
+            input_start = new Date(input_start)
+            input_end = new Date(input_end)
+            console.log("start time is " + input_start.toLocaleString())
+            console.log("End time is "+input_end.toLocaleString())
             console.log("----------------")
+
+            if(input_end <= input_start){
+                alert("You are crazy. Time doesn't flow backward")
+            }
 
             let isDateOpen = true
 
             for(let i=0; i<booking.length; i++){
-                let startdatetime = new Date(booking[i]["StartDate"].replace("Z",""))
-                let enddatetime = new Date(booking[i]["EndDate"].replace("Z",""))
-                console.log(startdatetime)
-                console.log(enddatetime)
 
-                if(startdatetime<=start && enddatetime>=end){
-                    console.log("already booked")
-                    isDateOpen = false
-                    break
-                }else if(startdatetime>start && startdatetime>end){
-                    console.log("open slot")
-                    isDateOpen = true
-                }else if(enddatetime<start && enddatetime<end){
-                    console.log("open slot")
-                    isDateOpen = true
+                let get_start = new Date(booking[i]["StartDate"])
+                let get_end = new Date(booking[i]["EndDate"])
+                console.log(get_start)
+                console.log(get_end)
+
+                if( (input_start>=get_start && input_start<=get_end) || (input_end>=get_start && input_end<=get_end)){
+                        console.log("already booked Middle")
+                        isDateOpen = false
+                        break
                 }
-                // else{
+                
+
+                // if(input_start>=get_start && input_end<=get_end){
+                //     console.log("already booked Middle")
                 //     isDateOpen = false
                 //     break
                 // }
+                // else if(input_start <= get_start ){
+                //     console.log("input start is greater");
+                //     if(input_end >= get_start){
+                //         console.log("already booked Start")
+                //         isDateOpen = false
+                //         break
+                //     }
+                // }
+                // else if(input_end >= get_end){
+                //     console.log("input end is greater");
+                //     if(input_start <= get_end){
+                //         console.log("already booked End")
+                //         isDateOpen = false
+                //         break
+                //     }
+                // }
+                // else{
+                //     // isDateOpen = false
+                //     // break
+                    // console.log("Not booked")
+                // }
             }
 
-            console.log("Date is open ? -"+isDateOpen)
+            console.log("Is a slot open? "+isDateOpen);
+            console.log("-------------------");
+
             if(isDateOpen){
                 setIsBookedView({"display":"block", "value": "Booking successfull"})
                 setMakeBookingColor("#197ee3")
@@ -216,7 +241,10 @@ function CarSubscribe(){
 
     return(
         <div>
-            <h3 className='user'>{sessionUser["Name"]}</h3>
+            <div className='logout' style={{marginTop: "-5%"}}>
+                <h3 >{sessionUser["Name"]}</h3>
+                <button onClick={()=>{sessionStorage.clear(); navigate("/")}}>Logout</button>
+            </div>
             
             <h1 style={{color: "white"}}>{car["Name"]}</h1>
             <div className='container'>

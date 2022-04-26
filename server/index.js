@@ -153,6 +153,7 @@ app.get("/getUserBookings", (req, res)=>{
 })
 
 app.post("/removeBooking", (req, res)=>{
+    console.log("calling")
     const bookingID = req.body.BookingID
     const sqlQuery = "DELETE FROM car.bookings WHERE bookings.BookingID = ?;"
     db.query(sqlQuery, [bookingID], (err, result)=>{
