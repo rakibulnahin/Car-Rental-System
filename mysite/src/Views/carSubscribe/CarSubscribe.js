@@ -146,7 +146,7 @@ function CarSubscribe(){
             console.log(end)
             console.log("----------------")
 
-            let isDateOpen = false
+            let isDateOpen = true
 
             for(let i=0; i<booking.length; i++){
                 let startdatetime = new Date(booking[i]["StartDate"].replace("Z",""))
@@ -164,10 +164,11 @@ function CarSubscribe(){
                 }else if(enddatetime<start && enddatetime<end){
                     console.log("open slot")
                     isDateOpen = true
-                }else{
-                    isDateOpen = false
-                    break
                 }
+                // else{
+                //     isDateOpen = false
+                //     break
+                // }
             }
 
             console.log("Date is open ? -"+isDateOpen)
